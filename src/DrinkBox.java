@@ -18,6 +18,7 @@ public class DrinkBox {
         System.out.println("음료를 선택하세요. : ");
         select = scanner.nextInt();
 
+
         return select-1;
     }
 }

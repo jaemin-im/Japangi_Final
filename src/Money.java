@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Money {
     Scanner scanner = new Scanner(System.in);
     int bill = 0;
-    public void GetMoney() {
+    public void GetMoney() throws Exception {
         System.out.println("입금하실 액수를 입력하십시오 : ");
         bill += scanner.nextInt();
         System.out.print(bill);

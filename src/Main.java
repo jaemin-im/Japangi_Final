@@ -1,6 +1,9 @@
 /**
  * Created by dsm2017 on 2017-03-10.
+ * @author Xsoulte
+ * @version 1.0
  */
+import java.io.IOException;
 import java.util.Scanner;
 public class Main {
     public static void main(String args[])
@@ -18,7 +21,13 @@ public class Main {
             select = scanner.nextInt();
             switch (select) {
                 case 1:
-                    money.GetMoney();
+                    try {
+                        money.GetMoney();
+                    }
+                    catch(Exception e)
+                    {
+                        System.out.println("선택하는 도중 오류가 발생하였습니다.");
+                    }
                     break;
                 case 2:
                     int drinkSelect;
